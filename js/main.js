@@ -73,7 +73,33 @@
             }
         }
     });
-
-    
+    async function enviarFormulario(){
+        const $formulario=document.getElementById("form");
+        const datos=new FormData($formulario);
+        const $response=document.querySelector('.response');
+        const init = {
+            method: "POST",
+            body: datos,
+            mode: "cors"
+          };
+          try {
+            const response = await fetch('https://gentler-curvature.000webhostapp.com/fmail.php', init);
+            $response.innerHTML=`
+            <div class="formulario__mensaje-successful">
+                <p >El formulario ha sido enviado exitosamente!</p>
+            </div>
+            `;
+            $formulario.reset();
+          } catch (err) {
+            $response.innerHTML=`
+            <div class="formulario__mensaje-error">
+                <p>Error al enviar tus datos. Intenta nuevamente.</p>
+            </div>`;
+            console.error(`Fomulario error: ${err}`);
+          }finally{
+            setTimeout(()=>$response.classList.remove('hidden'),300);
+            setTimeout(()=>$response.classList.add('hidden'),5000);
+          }
+    }
 })(jQuery);
 
