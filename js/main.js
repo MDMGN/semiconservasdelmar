@@ -73,8 +73,12 @@
             }
         }
     });
+    const $formulario=document.getElementById("form");
+    $formulario.addEventListener('submit',(e){
+        e.preventDefault();
+        enviarFormulario();
+    });
     async function enviarFormulario(){
-        const $formulario=document.getElementById("form");
         const datos=new FormData($formulario);
         const $response=document.querySelector('.response');
         const init = {
