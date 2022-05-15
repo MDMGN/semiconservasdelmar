@@ -74,7 +74,7 @@
         }
     });
     const $formulario=document.getElementById("form");
-    $formulario.addEventListener('submit',(e){
+    $formulario.addEventListener('submit',(e)=>{
         e.preventDefault();
         enviarFormulario();
     });
