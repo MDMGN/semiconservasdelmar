@@ -415,4 +415,22 @@ color: #fff;
     width: 320px;
     height: 250px;
 }
+.img-bg{
+    width: 120px;
+    height: 120px;
+}
+.img-c{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+}
+.c-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.t-container{
+    margin: 50px;
+    border: 1px solid rgb(81, 19, 197);
+}
 	
