@@ -396,10 +396,14 @@ color: #fff;
 .response.hidden{
     display: none;
 }
+@font-face {
+    font-family: 'BreeSerif';
+    src: url('fonts/BreeSerif-Regular.ttf');
+}
 .title-h{
-    font-size: 16px;
+    font-size: 25px;
     font-weight: bold;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'BreeSerif';
 }
 .bg-packaging {
 	color: #000;
