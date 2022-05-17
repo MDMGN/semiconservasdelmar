@@ -414,6 +414,7 @@ color: #fff;
 .card img{
     width: 320px;
     height: 250px;
+    box-shadow: 2px 6px 5px 1px rgba(0, 0, 0, 0.2);
 }
 .img-bg{
     width: 120px;
