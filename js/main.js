@@ -155,7 +155,7 @@
         const wrapper = document.querySelector('.wrapper')
         const cellD = 60
         const topValues = [0.5,1.5,2.5,3.5]
-        let bannerContent = 'Hi,#write#something#in#the#box#and#click#\'create\''
+        let bannerContent = 'Thanks#you#!#\'\''
         const banners = []
         let spriteId = 0
         let topIndex = 3
@@ -346,5 +346,5 @@
       
       }
       
-      window.addEventListener('DOMContentLoaded', init)
+      document.querySelector(".btn-message").addEventListener('click', init)
 

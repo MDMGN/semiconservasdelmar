@@ -431,7 +431,6 @@ color: #fff;
     justify-content: flex-end;
 }
 .t-container{
-    margin: 50px;
     border: 1px solid rgb(81, 19, 197);
     box-shadow: 2px 6px 8px 1px rgba(0, 0, 0, 0.2);
 }
