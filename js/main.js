@@ -1,3 +1,4 @@
+
 (function ($) {
     "use strict";
 
@@ -106,9 +107,21 @@
           }
     }
 })(jQuery);
+let contador=0;
+    const init=()=> {
 
-    function init() {
-
+        let nombre="Thanks#you#!";
+        contador++;
+        console.log(contador)
+        if(contador !== 2 && contador !== 3 && contador !== 4){
+            nombre="Thanks#you#!";
+        }else if(contador == 2){
+            nombre="Asier";
+        }else if(contador == 3){
+            nombre= "Myriam";
+        }else if(contador == 4){
+            nombre="Darren";
+        }
         const colors = [
           {
             a: 'navy',
@@ -155,7 +168,7 @@
         const wrapper = document.querySelector('.wrapper')
         const cellD = 60
         const topValues = [0.5,1.5,2.5,3.5]
-        let bannerContent = 'Thanks#you#!#\'\''
+        let bannerContent = `${nombre}#\'\'`
         const banners = []
         let spriteId = 0
         let topIndex = 3
