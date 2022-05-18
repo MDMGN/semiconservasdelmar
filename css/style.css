@@ -538,3 +538,20 @@ color: #fff;
   display: flex;
   flex-direction: column;
 }
+.incoterm{
+    font-size: 30px;
+    box-shadow: 1px 5px 8px 8px rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto !important;
+    margin-top: 80px !important;
+}
+a{
+    cursor: pointer !important;
+}
+
+
+
+/*Icoterms*/
+

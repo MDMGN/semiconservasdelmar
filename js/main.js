@@ -359,5 +359,5 @@ let contador=0;
       
       }
       
-      document.querySelector(".btn-message").addEventListener('click', init)
-
+      document.querySelector(".btn-message").addEventListener('click', init);
+     
